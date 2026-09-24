@@ -32,8 +32,35 @@ Support Vector Machine (SVM)
 
 K-Nearest Neighbors (KNN)
 
+<<<<<<< HEAD
 A 5-fold Stratified Cross Validation was used during model comparison.
 
+=======
+
+The model-selection procedure selected:
+
+Best Model: Extra Trees
+
+The Extra Trees model achieved a 5-fold cross-validation accuracy of 98.41% on the training portion and 100% accuracy on the held-out test set.
+
+Because perfect test performance is unusually high for a medical prediction dataset, this result should be investigated for possible dataset duplication, leakage, or other characteristics before treating it as evidence of real-world performance.
+
+📋 Detailed Best Model Metrics
+
+Extra Trees
+
+Accuracy          : 1.0000
+Balanced Accuracy : 1.0000
+Precision         : 1.0000
+Recall            : 1.0000
+F1 Score          : 1.0000
+ROC-AUC           : 1.0000
+Log Loss          : 0.0008
+MCC               : 1.0000
+Cohen Kappa       : 1.0000
+Hamming Loss      : 0.0000
+Jaccard Score     : 1.0000
+>>>>>>> 5c9a3f6c85a57b932de254abc9e3af56d2bec074
 
 🔲 Confusion Matrix
 
