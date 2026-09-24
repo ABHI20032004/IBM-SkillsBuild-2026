@@ -12,90 +12,9 @@ Note: This project is for educational/academic purposes. It is not a medical dia
 
 This project uses the HeartDiseaseTrain-Test.csv dataset and compares multiple machine learning classification algorithms.
 
-The complete pipeline includes:
 
-Dataset
-   ↓
-Data Inspection
-   ↓
-Exploratory Data Analysis
-   ↓
-Data Preprocessing
-   ↓
-Train / Test Split
-   ↓
-Multiple ML Models
-   ↓
-5-Fold Cross Validation
-   ↓
-Model Evaluation
-   ↓
-Best Model Selection
-   ↓
-Prediction
+📊 Dataset link : https://www.kaggle.com/datasets/yangfanc/heart-disease-dataset-uci
 
-📊 Dataset
-
-The dataset contains:
-
-1,025 samples
-
-14 columns
-
-13 input features
-
-1 target column
-
-There were no missing values in the dataset.
-
-Numerical Features
-
-age
-
-resting_blood_pressure
-
-cholestoral
-
-Max_heart_rate
-
-oldpeak
-
-Categorical Features
-
-sex
-
-chest_pain_type
-
-fasting_blood_sugar
-
-rest_ecg
-
-exercise_induced_angina
-
-slope
-
-vessels_colored_by_flourosopy
-
-thalassemia
-
-Target
-
-0 → No Disease
-1 → Disease
-
-The dataset contains:
-
-Target
-
-Samples
-
-0
-
-499
-
-1
-
-526
 
 🤖 Models Trained
 
@@ -115,131 +34,6 @@ K-Nearest Neighbors (KNN)
 
 A 5-fold Stratified Cross Validation was used during model comparison.
 
-📈 Model Results
-
-The obtained results were:
-
-Model
-
-CV Accuracy
-
-Test Accuracy
-
-Precision
-
-Recall
-
-F1
-
-ROC-AUC
-
-Extra Trees
-
-98.41%
-
-100.00%
-
-100.00%
-
-100.00%
-
-100.00%
-
-100.00%
-
-Random Forest
-
-98.29%
-
-100.00%
-
-100.00%
-
-100.00%
-
-100.00%
-
-100.00%
-
-Gradient Boosting
-
-96.34%
-
-99.02%
-
-98.13%
-
-100.00%
-
-99.06%
-
-99.31%
-
-SVM
-
-90.24%
-
-95.12%
-
-93.58%
-
-97.14%
-
-95.33%
-
-97.73%
-
-Logistic Regression
-
-86.83%
-
-87.32%
-
-85.59%
-
-90.48%
-
-87.96%
-
-94.45%
-
-KNN
-
-85.73%
-
-88.78%
-
-87.27%
-
-91.43%
-
-89.30%
-
-96.31%
-
-The model-selection procedure selected:
-
-Best Model: Extra Trees
-
-The Extra Trees model achieved a 5-fold cross-validation accuracy of 98.41% on the training portion and 100% accuracy on the held-out test set.
-
-Because perfect test performance is unusually high for a medical prediction dataset, this result should be investigated for possible dataset duplication, leakage, or other characteristics before treating it as evidence of real-world performance.
-
-📋 Detailed Best Model Metrics
-
-Extra Trees
-
-Accuracy          : 1.0000
-Balanced Accuracy : 1.0000
-Precision         : 1.0000
-Recall            : 1.0000
-F1 Score          : 1.0000
-ROC-AUC           : 1.0000
-Log Loss          : 0.0008
-MCC               : 1.0000
-Cohen Kappa       : 1.0000
-Hamming Loss      : 0.0000
-Jaccard Score     : 1.0000
 
 🔲 Confusion Matrix
 
@@ -249,28 +43,12 @@ The test set contained:
 
 105 actual Disease samples
 
-The Extra Trees confusion matrix was:
-
-                 Predicted
-              No Disease  Disease
-Actual
-No Disease        100        0
-Disease             0      105
-
-
 
 📉 ROC Curve
 
 The Extra Trees model produced:
 
 ROC-AUC = 1.0000
-
-
-
-🔥 Correlation Heatmap
-
-The correlation heatmap was generated for the numerical variables in the dataset.
-
 
 
 📊 Target Distribution
@@ -358,27 +136,6 @@ After training, the best model is saved as:
 
 heart_disease_best_model.pkl
 
-The saved pipeline contains the preprocessing and trained model so that it can be reused for prediction.
-
-⚠️ Important Considerations
-
-The reported results are based on this particular dataset and train/test split.
-
-The 100% test performance should not be interpreted as 100% real-world accuracy. Before deployment or clinical use, the model would require:
-
-External validation
-
-Evaluation on an independent dataset
-
-Investigation of duplicate or highly similar records
-
-Leakage analysis
-
-Calibration analysis
-
-Clinical validation
-
-Appropriate privacy and regulatory review
 
 👨‍💻 Author
 
