@@ -2,21 +2,21 @@
 This is the final project I submitted as the final project for evaluation of what i did learn during the internship period.
 
 
-❤️ Heart Disease Prediction using Machine Learning
+#❤️ Heart Disease Prediction using Machine Learning
 
 A machine learning classification project that predicts the heart disease target class from clinical and patient-related features.
 
 Note: This project is for educational/academic purposes. It is not a medical diagnostic system and should not be used to make clinical decisions.
 
-📌 Project Overview
+#📌 Project Overview
 
 This project uses the HeartDiseaseTrain-Test.csv dataset and compares multiple machine learning classification algorithms.
 
 
-📊 Dataset link : https://www.kaggle.com/datasets/yangfanc/heart-disease-dataset-uci
+#📊 Dataset link : https://www.kaggle.com/datasets/yangfanc/heart-disease-dataset-uci
 
 
-🤖 Models Trained
+#🤖 Models Trained
 
 The following models were trained and compared:
 
@@ -32,10 +32,6 @@ Support Vector Machine (SVM)
 
 K-Nearest Neighbors (KNN)
 
-<<<<<<< HEAD
-A 5-fold Stratified Cross Validation was used during model comparison.
-
-=======
 
 The model-selection procedure selected:
 
@@ -45,7 +41,7 @@ The Extra Trees model achieved a 5-fold cross-validation accuracy of 98.41% on t
 
 Because perfect test performance is unusually high for a medical prediction dataset, this result should be investigated for possible dataset duplication, leakage, or other characteristics before treating it as evidence of real-world performance.
 
-📋 Detailed Best Model Metrics
+#📋 Detailed Best Model Metrics
 
 Extra Trees
 
@@ -60,9 +56,8 @@ MCC               : 1.0000
 Cohen Kappa       : 1.0000
 Hamming Loss      : 0.0000
 Jaccard Score     : 1.0000
->>>>>>> 5c9a3f6c85a57b932de254abc9e3af56d2bec074
 
-🔲 Confusion Matrix
+#🔲 Confusion Matrix
 
 The test set contained:
 
@@ -71,14 +66,14 @@ The test set contained:
 105 actual Disease samples
 
 
-📉 ROC Curve
+#📉 ROC Curve
 
 The Extra Trees model produced:
 
 ROC-AUC = 1.0000
 
 
-📊 Target Distribution
+#📊 Target Distribution
 
 The target distribution contains:
 
@@ -87,7 +82,7 @@ Class 1 → 526 samples
 
 
 
-🧪 Example Prediction
+#🧪 Example Prediction
 
 A sample test patient was passed through the trained Extra Trees model.
 
@@ -116,23 +111,8 @@ Seaborn
 
 Joblib
 
-📁 Project Structure
 
-Heart-Disease-Prediction/
-│
-├── HeartDiseaseTrain-Test.csv
-├── Abhishek_Raj__Heart_Disease_Prediction.py
-├── requirements.txt
-├── heart_disease_best_model.pkl
-├── README.md
-│
-└── images/
-    ├── roc_curve.png
-    ├── confusion_matrix.png
-    ├── correlation_heatmap.png
-    └── target_distribution.png
-
-▶️ How to Run
+#▶️ How to Run
 
 1. Clone the repository
 
@@ -157,20 +137,20 @@ pip install -r requirements.txt
 
 python Abhishek_Raj__Heart_Disease_Prediction.py
 
-📦 Model Output
+#📦 Model Output
 
 After training, the best model is saved as:
 
 heart_disease_best_model.pkl
 
 
-👨‍💻 Author
+#👨‍💻 Author
 
 Abhishek Raj
 
 B.Tech — Artificial Intelligence and Data Engineering
 
-📄 Project Purpose
+#📄 Project Purpose
 
 This project demonstrates a complete classical machine learning workflow:
 
